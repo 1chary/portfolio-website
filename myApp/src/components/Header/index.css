@@ -1,10 +1,8 @@
-* {
-    margin: 0;
-    padding: 0
-}
+
 
 .header-container {
     height: 10vh;
+    width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -30,3 +28,13 @@
     color: white;
     border: none;
 }
+
+@media screen and (max-width: 767px) {
+    .options-container {
+        display: none;
+    }
+    .connect-with-me-button-style {
+        display: none;
+    }
+}
+

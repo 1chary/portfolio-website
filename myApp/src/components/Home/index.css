@@ -1,3 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .heading {
     color: black;
+}
+.home-page-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.profile-photo {
+    height: 250px;
+    width: 250px;
+    border-radius: 120px;
+}
+
+.name-style {
+    color: orange;
+    font-size: 62px;
+}
+
+.home-page-content-style {
+    color: white;
+    font-size: 42px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .profile-photo {
+        height: 200px;
+        width: 200px;
+        margin-bottom: 40px;
+    }
+    .name-style  {
+        font-size: 32px;
+    }
+    .home-page-content-style {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .name-style  {
+        font-size: 48px;
+    }
+    
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    width: 70%;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+
+.button-style {
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 767px) {
+    .button-container {
+        margin-top: 70px;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .button-container  {
+        margin-top: 50px;
+        width: 70%;
+    }
+    
 }
