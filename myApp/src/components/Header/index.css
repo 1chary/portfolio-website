@@ -21,5 +21,12 @@
 
 .elements-style {
     color: white;
-    text-decoration: underline orange;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+.connect-with-me-button-style {
+    background-color: transparent;
+    color: white;
+    border: none;
 }
