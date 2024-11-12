@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.header-container {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.options-container {
+    display: flex;
+}
+
+.my-name {
+    font-family: Brush Script MT;
+}
+
+.elements-style {
+    color: white;
+    text-decoration: underline orange;
+}
