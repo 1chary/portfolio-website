@@ -12,8 +12,8 @@ const App = () => {
       <Header/>
       <Home/>
       <About/>
-      <Projects/>
       <Services/>
+      <Projects/>
       <Connect/>
     </div>
   )

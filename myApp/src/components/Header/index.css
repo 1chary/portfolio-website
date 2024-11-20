@@ -1,17 +1,23 @@
 
-
 .header-container {
     height: 10vh;
-    width: 100%;
+    min-width: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: white;
 }
-.options-container {
+.options-container-for-large-devices {
     display: flex;
 }
+
+@media screen and (max-width: 767px) {
+    .header-container {
+        justify-content: none; 
+    }
+}
+
 
 .my-name {
     font-family: Brush Script MT;
@@ -24,18 +30,48 @@
     cursor:pointer;
 }
 
-.connect-with-me-button-style {
+
+@media screen and (max-width: 767px) {
+    .options-container-for-large-devices {
+        display: none;
+    }
+}
+
+.for-small-devices {
+    display: flex;
+    flex-direction: column;
+
+}
+.example {
+    background-color: black;
+    height: 50vh;
+    border: 1px solid black
+}
+.route-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.icon-style {
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .for-small-devices {
+        display: none;
+    }
+}
+
+.trigger-button {
+    font-size: 32px;
     background-color: transparent;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-    .options-container {
-        display: none;
-    }
-    .connect-with-me-button-style {
+@media screen and (min-width: 768px) {
+    .trigger-button {
         display: none;
     }
 }
-

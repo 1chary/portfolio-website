@@ -1,0 +1,114 @@
+.connect-page {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect-alignment-container {
+    display: flex;
+    width: 90%;
+    min-height: 80vh;   
+  
+
+}
+
+.info-container {
+    width: 45%;
+    margin-top: 20px;
+
+}
+@media screen and (max-width: 767px) {
+    .connect-alignment-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .info-container {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .connect-alignment-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-container {
+        width: 90%;
+    }
+}
+
+
+.message-para-style {
+    color: white;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.icon-with-text {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    width: 90%;
+    margin-top: 20px;
+}
+.connect-icon-styling {
+    color: white;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.user-details-container {
+    width: 45%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.input-box {
+    height: 40px;
+    width: 70%;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-left: 30px;
+}
+.description-message-box {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+@media screen and (max-width: 767px) {
+    .user-details-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .description-message-box {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .user-details-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+.submit-button {
+    height: 30px; 
+    width: 30%;
+    background-color: transparent;
+    color: white;
+    background-color: orange;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
