@@ -23,6 +23,7 @@
     font-family: Brush Script MT;
 }
 
+
 .elements-style {
     color: white;
     text-decoration: none;
@@ -31,11 +32,7 @@
 }
 
 
-@media screen and (max-width: 767px) {
-    .options-container-for-large-devices {
-        display: none;
-    }
-}
+
 
 .for-small-devices {
     display: flex;
@@ -44,8 +41,8 @@
 }
 .example {
     background-color: black;
-    height: 50vh;
-    border: 1px solid black
+    height: 30vh;
+    margin-left: 60px;
 }
 .route-card {
     display: flex;
@@ -54,12 +51,8 @@
 }
 .icon-style {
     color: white;
-}
-
-@media screen and (min-width: 768px) {
-    .for-small-devices {
-        display: none;
-    }
+    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .trigger-button {
@@ -69,6 +62,20 @@
     border: none;
     cursor: pointer;
 }
+
+@media screen and (max-width: 767px) {
+    .options-container-for-large-devices {
+        display: none;
+    }
+    .my-name {
+        order: 1
+    }
+    .trigger-button {
+        order: 0
+    }
+}
+
+
 
 @media screen and (min-width: 768px) {
     .trigger-button {
