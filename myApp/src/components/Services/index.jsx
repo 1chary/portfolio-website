@@ -1,9 +1,11 @@
 import React from 'react'
+import "./index.css"
+
 
 const Services = () => {
   return (
-    <div>
-        <h1>Welcome to the services page</h1>
+    <div id = "services" className='services-page'>
+        <h1 className='welcome'>Welcome to the services page</h1>
     </div>
   )
 }

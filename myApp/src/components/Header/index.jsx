@@ -1,26 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./index.css"
-import { Link } from 'react-router-dom'
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
 const Header = () => {
+    const [activeTab,changeActiveTab] = useState("home")
+
   return (
     <div className="header-container">
         <h1 className="my-name">Abhi</h1>
         <div className="options-container">
-            <Link to = "/" className='elements-style'>  
-                <h3 className="options-style">Home</h3>
-            </Link>
-            <Link to = "/about" className='elements-style'>
-                <h3 className="options-style">About</h3>
-            </Link>
-            <Link to = "/services" className='elements-style'>  
-                <h3 className="options-style">Services</h3>
-            </Link>
-            <Link to = "/connect" className='elements-style'>
-                <h3 className="options-style">Connect</h3>
-            </Link>
+            <AnchorLink className='elements-style' href='#home'>
+                <h3 className="options-style" onClick={() => changeActiveTab("home")}>Home</h3>
+            </AnchorLink>
+            
+            <AnchorLink className='elements-style' href='#about'>
+                <h3 className="options-style" onClick={() => changeActiveTab("about")}>About</h3>
+            </AnchorLink>
+
+            <AnchorLink className='elements-style' href='#services'>  
+                <h3 className="options-style" onClick={() => changeActiveTab("services")}>Services</h3>
+            </AnchorLink>
+
+            <AnchorLink className='elements-style' href='#projects'>  
+                <h3 className="options-style" onClick={() => changeActiveTab("projects")}>Projects</h3>
+            </AnchorLink>
+
+            <AnchorLink className='elements-style' href='#connect'>
+                <h3 className="options-style" onClick={() => changeActiveTab("connect")}>Connect</h3>
+            </AnchorLink>
         </div>
-        <button className="connect-with-me-button-style">Connect With Me</button>
+        <AnchorLink className='elements-style' href='#connect'>
+            <button>Connect with me</button>
+        </AnchorLink>
     </div>
   )
 }
