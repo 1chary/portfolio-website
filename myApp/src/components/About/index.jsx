@@ -23,7 +23,7 @@ const About = () => {
             evolved into a carrer where i continuosly strive to learn to and
             adapt to new challenges. I thrive in collaborative environments and
             enjoy solving problems and deliver high quality solutions. Outside
-            of coding i would love to explore new tech releated stuff
+            of coding i would love to explore new tech releated stuff.
           </p>
           <div className="tech-name-container">
             <h2 className="heading-style">Technologies</h2>

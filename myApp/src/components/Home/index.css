@@ -34,10 +34,11 @@
     color: white;
     font-size: 42px;
     padding-left: 30px;
-    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-family: "Crimson Text", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -63,6 +64,7 @@
 .description-about-me {
     color: white;
     margin-top: 20px;
+    font-size: 32px;
 }
 
 
