@@ -11,15 +11,17 @@ const Connect = () => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm ("service_eowtq7h", "template_iv21qre", form.current,"ux_vQDq92KvkqAah1")
+    emailjs
+      .sendForm('service_frp51tx', 'template_iv21qre', form.current, {
+        publicKey: 'ux_vQDq92KvkqAah1',
+      })
       .then(
         () => {
-          console.log("SUCCESS!");
+          console.log('SUCCESS!');
         },
         (error) => {
-          console.log("FAILED...", error.text);
-        }
+          console.log('FAILED...', error.text);
+        },
       );
   };
 
