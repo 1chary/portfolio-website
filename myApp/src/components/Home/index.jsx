@@ -7,7 +7,7 @@ const Home = () => {
     <div className="home-page-container" id="home">
       <motion.div className="alignment-container" initial = {{opacity: 0}} whileInView={{opacity: 1,transition: {duration: 5}}} viewport={{once: true}}>
         <img
-          src="https://t3.ftcdn.net/jpg/05/69/40/92/360_F_569409270_0gaUgTmRarjnsPFTSnUG6ZqHAzRFPTag.jpg"
+          src="https://res.cloudinary.com/dowjvitxs/image/upload/v1732723350/me_with_coat_lkjtvx.jpg"
           alt="profile"
           className="profile-photo"
         />
@@ -15,7 +15,7 @@ const Home = () => {
         <p className="description-about-me">
           I am a full stack developer with a knack for creating robust and
           scaleable applications. My goal is to create innovative solutions that
-          drive business growth and deliver expection user experience.
+          drive business growth and deliver user friendly applications.
         </p>
       </motion.div>
     </div>

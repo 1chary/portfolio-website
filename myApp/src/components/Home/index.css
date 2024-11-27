@@ -22,7 +22,7 @@
 .profile-photo {
     height: 350px;
     width: 350px;
-    border-radius: 220px;
+    border-radius: 60px;
 }
 
 .name-style {
@@ -31,7 +31,7 @@
 }
 
 .home-page-content-style {
-    color: white;
+    color: orange;
     font-size: 42px;
     padding-left: 30px;
     font-family: "Crimson Text", serif;
